@@ -223,17 +223,48 @@ header.sticky{
 }
 
 .exp-area p{
-    color: var(--text-color);
+    color: var(--other-color);
     font-weight: 600;
     font-size: 19px;
-    line-height: 42px;
+    line-height: 37px;
+
 }
 
 .exp-area p span{
-    color: var(--other-color);
+    color: var(--text-color);
     font: var(--p-font);
     font-weight: 400 ;
-    margin-left: 8px;
+}
+
+.technologies{
+    margin-top: 20px;
+}
+
+.technologies i{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 20px;
+    height: 20px;
+    color: var(--other-color);
+    border-radius: 50%;
+    backdrop-filter: brightness(88%);
+    font-size: 20px;
+    margin-right: 20px;
+    box-shadow: 0 0 20px transparent;
+    cursor: pointer;
+    transition: all .50s ease;
+}
+
+.technologies span{
+    margin-right: 15px;
+}
+
+
+.technologies i:hover{
+    color: var(--text-color);
+    transform: scale(1.1);
+    box-shadow: 0 0 20px var(--other-color);
 }
 
 
@@ -265,6 +296,7 @@ header.sticky{
 
 .box img{
     margin-bottom: 20px;
+
 }
 
 .box h3{
