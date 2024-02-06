@@ -285,18 +285,33 @@ header.sticky{
 }
 
 .box{
-    padding: 80px 40px 66px;
+    padding: 40px 30px 66px;
     background: #2d343f;
     border-radius: 20px;
     border: 1px solid transparent;
     box-shadow: 0 0 5px var(--main-color);
     transition: all .50s ease;
     cursor: pointer;
+
+    box-sizing: border-box;
+    height: 100%; 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .box img{
     margin-bottom: 20px;
 
+}
+
+.box-header{
+    display: flex;
+    align-items: center;
+}
+
+.box-header img{
+    margin-right: 15px;
 }
 
 .box h3{
@@ -305,7 +320,7 @@ header.sticky{
     margin-bottom: 10px;
 }
 
-.box p{
+.box ul{
     font-size: var(--p-font);
     font-weight: 400;
     color: var(--other-color);
@@ -313,18 +328,28 @@ header.sticky{
     margin-bottom: 20px;
 }
 
+.box ul li{
+    margin-top: 20px;
+    list-style: disc !important;
+    margin-left: 17px;
+
+
+}
+
 .box a{
-    display: inline-block;
+    display: inline-block ;
     font-size: 22px;
     line-height: 1.273rem;
     font-weight: 700;
-    padding: 7px 0;
+    padding-top: 20px;
+    padding-bottom: 7px;
     color: var(--text-color);
     border-bottom: 2px solid #5d6c83;
     transition: all .50s ease;
 }
 
 .box i{
+    
     vertical-align: middle;
     font-size: 25px;
     color: var(--main-color);
