@@ -124,10 +124,11 @@ section{
     font-weight: 400;
     margin: 20px 0px 20px;
     line-height: 1.2;
+    width: 70%;
 }
 
 .main-content p{
-    font-size: var(--p-font);
+    font-size: 20px;
     font-weight: 400;
     width: 620px;
     max-width: 100%;
@@ -272,7 +273,7 @@ header.sticky{
 
 
 .technologies i:hover{
-    color: var(--text-color);
+    color: var(--main-color);
     transform: scale(1.1);
     box-shadow: 0 0 20px var(--other-color);
 }
@@ -493,7 +494,6 @@ form .send-btn{
     font-weight: 600;
     transition: all .50s ease;
     color: var(--bg-color) ;
-    width: 30%;
 }
 
 form .send-btn:hover{
@@ -587,6 +587,7 @@ form .send-btn:hover{
 }
 
 @media (max-width:1290px){
+   
     .box{
         padding: 40px 40px 46px;
     }
@@ -724,9 +725,14 @@ form .send-btn:hover{
         margin-top: 20px !important;
 
     }
+
+
 }
 @media (max-width: 870px){
     
+    .main-content p{
+        margin-top: 20px;
+    }
     .main-content p{
         width: 60%;
     }
@@ -741,15 +747,28 @@ form .send-btn:hover{
         /* height: 90vh; */ /*decidi no ponerlo asi*/
         background-position: 84% ;
     }
+
+    .contact_me{
+        font-size: 13px;
+        padding: 10px 20px;
+    }
 }
 
 @media (max-width:680px){
+
+
+    :root{
+        --h1-font: 3rem;
+        --h2-font: 1.2rem;
+    } 
+    
 
     .contenido-modal img{
         width: 80% !important;
     }
     .main-content p{  
-        width: 100%;
+        width: 70%;
+        /* font-size: 18px; */
         /* Solucion al problema de que el p se sale de la pantalla */
     }
 
@@ -765,6 +784,16 @@ form .send-btn:hover{
     }
 }    */
 
+
+
+@media(max-width: 550px){
+    header .logo{
+        font-size: 25px !important;
+        width: 40%;
+    }
+
+}
+
 @media (max-width:500px){
 
     .hero{
@@ -776,14 +805,14 @@ form .send-btn:hover{
         --h2-font: 1.2rem;
     }
     
-    header .logo{
-        font-size: 28px;
-        width: 40%;
-    }
+   
 
     .main-content p{
-        width: 80%;
+        margin-top: 20px;
+        width: 70%;
+        font-size: 18px;
     }
+
     .main-btn a {
         padding: 8px 20px !important;
     }
@@ -805,6 +834,8 @@ form .send-btn:hover{
         object-fit: cover;
         margin: 0 auto;
     }
+
+ 
 
     
 }
