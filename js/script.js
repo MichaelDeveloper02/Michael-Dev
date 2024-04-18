@@ -179,6 +179,35 @@ window.addEventListener("click",function(event) {
 
 
 
+
+
+
+
+// ArteSublim
+var btnArteSublim = document.querySelector(".btn_artesublim")
+var cerrarArteSublim = document.querySelector(".btn_cerrar_artesublim")
+
+var ArteSublimModal = document.querySelector(".artesublim_modal")
+
+
+btnArteSublim.addEventListener("click",()=>{
+  ArteSublimModal.style.display = "flex"
+})
+
+cerrarArteSublim.addEventListener("click",()=>{
+  ArteSublimModal.style.display = "none"
+})
+
+window.addEventListener("click",function(event) {
+  if (event.target == TrackerModal) {
+    ArteSublimModal.style.display = "none";
+  }
+});
+
+
+
+
+
 // Acordeon
 var acc = document.getElementsByClassName("accordion");
 var i;
