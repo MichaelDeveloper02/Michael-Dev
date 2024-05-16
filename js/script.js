@@ -39,6 +39,56 @@ window.addEventListener("click",function(event) {
   }
 });
 
+
+
+// The PResidential Limo
+
+var btnLimo = document.querySelector(".btn_Limo")
+var cerrarLimo = document.querySelector(".btn_cerrar_limo")
+
+var LimoModal = document.querySelector(".limo_modal")
+
+
+btnLimo.addEventListener("click",()=>{
+  LimoModal.style.display = "flex"
+})
+
+cerrarLimo.addEventListener("click",()=>{
+  LimoModal.style.display = "none"
+})
+
+window.addEventListener("click",function(event) {
+  if (event.target == LimoModal) {
+    LimoModal.style.display = "none";
+  }
+});
+
+
+
+// Casa Mordan
+
+var btnCasaMordan = document.querySelector(".btn_casamordan")
+var cerrarCasaMordan = document.querySelector(".btn_cerrar_casamordan")
+
+var CasaMordanModal = document.querySelector(".casamordan_modal")
+
+
+btnCasaMordan.addEventListener("click",()=>{
+  CasaMordanModal.style.display = "flex"
+})
+
+cerrarCasaMordan.addEventListener("click",()=>{
+  CasaMordanModal.style.display = "none"
+})
+
+window.addEventListener("click",function(event) {
+  if (event.target == CasaMordanModal) {
+    CasaMordanModal.style.display = "none";
+  }
+});
+
+
+
 // Modern Modal
 
 var btnModern = document.querySelector(".btn_modern")
