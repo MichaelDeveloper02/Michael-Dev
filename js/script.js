@@ -41,6 +41,55 @@ window.addEventListener("click",function(event) {
 
 
 
+// Marilin
+
+var btnMarilin = document.querySelector(".btn_Marilin")
+var cerrarMarilin = document.querySelector(".btn_cerrar_marilin")
+
+var MarilinModal = document.querySelector(".marilin_modal")
+
+
+btnMarilin.addEventListener("click",()=>{
+  MarilinModal.style.display = "flex"
+})
+
+cerrarMarilin.addEventListener("click",()=>{
+  MarilinModal.style.display = "none"
+})
+
+window.addEventListener("click",function(event) {
+  if (event.target == MarilinModal) {
+    MarilinModal.style.display = "none";
+  }
+});
+
+
+
+
+// IQN group
+
+var btnIQN = document.querySelector(".btn_IQN")
+var cerrarIQN = document.querySelector(".btn_cerrar_iqn")
+
+var IQNModal = document.querySelector(".iqn_modal")
+
+
+btnIQN.addEventListener("click",()=>{
+  IQNModal.style.display = "flex"
+})
+
+cerrarIQN.addEventListener("click",()=>{
+  IQNModal.style.display = "none"
+})
+
+window.addEventListener("click",function(event) {
+  if (event.target == IQNModal) {
+    IQNModal.style.display = "none";
+  }
+});
+
+
+
 // The PResidential Limo
 
 var btnLimo = document.querySelector(".btn_Limo")
@@ -225,11 +274,6 @@ window.addEventListener("click",function(event) {
     TrackerModal.style.display = "none";
   }
 });
-
-
-
-
-
 
 
 
